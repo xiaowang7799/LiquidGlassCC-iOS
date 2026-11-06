@@ -16,5 +16,6 @@ jobs:
         run: |
           git clone --depth 1 https://github.com/theos/theos.git "$HOME/theos"
           export THEOS="$HOME/theos"
+          make -C "$THEOS" -j4
           make package THEOS_PACKAGE_SCHEME=rootless SDKVERSION=16.5
           ls -la packages
