@@ -12,13 +12,10 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v4
 
-      - name: Set up Theos
-        run: |
-          git clone --depth 1 https://github.com/theos/theos.git $HOME/theos
-          echo "THEOS=$HOME/theos" >> 
-          echo "SDKVERSION=16.5" >> "$GITHUB_ENV"
-
       - name: Build Rootless deb
         run: |
+          git clone --depth 1 https://github.com/theos/theos.git "$HOME/theos"
+          echo "THEOS=$HOME/theos" >> "$GITHUB_ENV"
+          echo "SDKVERSION=16.5" >> "$GITHUB_ENV"
           make package THEOS_PACKAGE_SCHEME=rootless SDKVERSION=16.5
           ls -la packages
