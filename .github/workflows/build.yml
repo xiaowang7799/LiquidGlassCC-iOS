@@ -2,28 +2,23 @@ name: LiquidGlassCC CI
 
 on:
   push:
-    branches: [ main, master ]
+    branches: [ main ]
   workflow_dispatch:
 
 jobs:
-  build:
+  build-rootless:
     runs-on: macos-latest
     steps:
       - name: Checkout
         uses: actions/checkout@v4
+
       - name: Set up Theos
         run: |
-          git clone --depth 1 https://github.com/theos/theos.git $THEOS
-          echo "THEOS=$THEOS" >> $GITHUB_ENV
-      - name: Install dependencies
-        run: |
-          brew install ldid
-          sudo xcode-select -s /Applications/Xcode_15.app
-      - name: Build Rootless package
+          git clone --depth 1 https://github.com/theos/theos.git /theos
+          echo "THEOS=/theos" >> 
+          echo "SDKVERSION=16.5" >> 
+
+      - name: Build Rootless deb
         run: |
           make package THEOS_PACKAGE_SCHEME=rootless SDKVERSION=16.5
-      - name: Upload artifact
-        uses: actions/upload-artifact@v4
-        with:
-          name: liquidglasscc-rootless
-          path: packages/*.deb
+          ls -la packages
