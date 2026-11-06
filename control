@@ -1,0 +1,10 @@
+Package: com.zegeyoudaoli.liquidglasscc
+Name: 控制中心液态玻璃
+Depends: mobilesubstrate (>= 0.9.5000), preferenceloader (>= 2.2.0)
+Section: Tweaks
+Architecture: iphoneos-arm
+Maintainer: LiquidGlassCC <local@build>
+Description: iOS 27 风格「控制中心」液态玻璃材质。在 SpringBoard 的控制中心模块背后注入带背景采样模糊、边缘折射透镜与菲涅尔高光的玻璃视图，并提供 PreferenceLoader 设置面板调节模糊/折射/高光/玻璃厚度。
+Version: 1.0.0-1
+Author: local-build
+Homepage: https://example.local/liquidglasscc
