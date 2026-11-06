@@ -14,8 +14,8 @@ jobs:
 
       - name: Build Rootless deb
         run: |
-          git clone --depth 1 https://github.com/theos/theos.git "$HOME/theos"
-          echo "THEOS=$HOME/theos" >> "$GITHUB_ENV"
+          export THEOS="$HOME/theos"
+          export THEOS="$HOME/theos"
           echo "SDKVERSION=16.5" >> "$GITHUB_ENV"
-          make package THEOS_PACKAGE_SCHEME=rootless SDKVERSION=16.5
+          export THEOS="$HOME/theos"
           ls -la packages
