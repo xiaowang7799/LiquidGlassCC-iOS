@@ -1,0 +1,30 @@
+{
+  "en": {
+    "title": "控制中心液态玻璃",
+    "enabled": "启用液态玻璃",
+    "blur": "背景模糊半径",
+    "refraction": "边缘折射强度",
+    "specular_mode": "边缘高光模式",
+    "specular_opacity": "边缘高光不透明度",
+    "fresnel": "菲涅尔高光强度",
+    "thickness": "玻璃厚度",
+    "mode_none": "无",
+    "mode_border": "边框",
+    "mode_glass": "玻璃",
+    "reset": "重置为默认值"
+  },
+  "zh-Hans": {
+    "title": "控制中心液态玻璃",
+    "enabled": "启用液态玻璃",
+    "blur": "背景模糊半径",
+    "refraction": "边缘折射强度",
+    "specular_mode": "边缘高光模式",
+    "specular_opacity": "边缘高光不透明度",
+    "fresnel": "菲涅尔高光强度",
+    "thickness": "玻璃厚度",
+    "mode_none": "无",
+    "mode_border": "边框",
+    "mode_glass": "玻璃",
+    "reset": "重置为默认值"
+  }
+}
