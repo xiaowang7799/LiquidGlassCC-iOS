@@ -14,8 +14,8 @@ jobs:
 
       - name: Set up Theos
         run: |
-          git clone --depth 1 https://github.com/theos/theos.git /theos
-          echo "THEOS=/theos" >> 
+          git clone --depth 1 https://github.com/theos/theos.git C:\Users\HP/theos
+          echo "THEOS=C:\Users\HP/theos" >> 
           echo "SDKVERSION=16.5" >> 
 
       - name: Build Rootless deb
