@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>CFBundleIdentifier</key>
+	<string>com.zegeyoudaoli.liquidglasscc.prefs</string>
+	<key>CFBundleDisplayName</key>
+	<string>控制中心液态玻璃</string>
+	<key>CFBundleShortVersionString</key>
+	<string>1.0.0</string>
+	<key>CFBundleVersion</key>
+	<string>1</string>
+	<key>CFBundlePackageType</key>
+	<string>BNDL</string>
+	<key>CFBundleExecutable</key>
+	<string>LiquidAssPrefs</string>
+	<key>PrincipalClass</key>
+	<string>LiquidAssPrefsListController</string>
+	<key>Entries</key>
+	<array>
+		<dict>
+			<key>Cell</key>
+			<string>PSLinkCell</string>
+			<key>Icon</key>
+			<string>icon.png</string>
+			<key>Title</key>
+			<string>控制中心液态玻璃</string>
+			<key>Bundle</key>
+			<string>com.zegeyoudaoli.liquidglasscc.prefs</string>
+			<key>IsController</key>
+			<true/>
+		</dict>
+	</array>
+</dict>
+</plist>
